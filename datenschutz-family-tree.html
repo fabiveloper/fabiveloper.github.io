@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex,nofollow">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; style-src 'self'; img-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="description" content="Fabian Unger, Software-Entwickler. Projekte: Rennbahn-Simulation mit KI und die Android-App Family Tree.">
+  <title>Datenschutz Family Tree | fabiveloper</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Zum Inhalt</a>
+<div class="notice-bar">Entwurf: Rechtsangaben noch unvollständig. <a href="impressum.html">Offene Angaben</a>
+</div>
+<div class="container">
+<header>
+<a class="identity" href="index.html">
+<span class="monogram" aria-hidden="true">FU</span>fabiveloper</a>
+<nav aria-label="Hauptnavigation">
+<a href="index.html#projekte">Projekte</a>
+<a href="index.html#ueber">Über mich</a>
+<a href="index.html#kontakt">Kontakt</a>
+</nav>
+</header>
+<main class="page" id="main">
+<a class="back" href="index.html">← Startseite</a>
+<h1>Datenschutz für Family Tree</h1>
+<p class="meta">Stand: 04.10.2026 · Family Tree für Android</p>
+<!-- DRAFT_LEGAL: Erst nach sachlicher Vervollständigung entfernen. -->
+<aside class="draft-note">
+<strong>Unvollständiger Entwurf</strong>Betreiberangaben und markierte Hosting- beziehungsweise Vertriebsfragen müssen vor Veröffentlichung geklärt werden. Diese Arbeitsfassung ist keine rechtliche Freigabe.</aside>
+<div class="legal-links">
+<a href="impressum.html">Impressum</a>
+<a href="datenschutz.html">Datenschutz Website</a>
+</div>
+<section>
+<h2>Geltungsbereich und Anbieter</h2>
+<p>Diese Hinweise betreffen Family Tree für Android (Paket com.fabiunger.familytree), nicht die Portfolio-Website. Anbieter ist Fabian Unger. Kontakt: fabian.unger@t-online.de. Die ladungsfähige Anschrift und weitere erforderliche Betreiberangaben sind vor Veröffentlichung im Impressum zu ergänzen. Eine mögliche spätere iOS-Version ist von dieser Fassung nicht erfasst.</p>
+</section>
+<section>
+<h2>Familiendaten bleiben in der App</h2>
+<p>Family Tree dient dem Erstellen und Verwalten von Familienstammbäumen. Die App speichert Familiennamen, Vor- und Nachnamen, Geburts- und Sterbedaten, Beruf, Familienbeziehungen und optional Profilbilder lokal auf deinem Gerät. Die Datenbank verwendet WatermelonDB/SQLite; Bilder liegen in app-internen Dateien. Anzeigeeinstellungen werden lokal mit AsyncStorage gespeichert. Es gibt keine Nutzerkonten und keinen zentralen Server des Entwicklers für deine Familiendaten.</p>
+</section>
+<section>
+<h2>Netzwerk, Analyse und Berechtigungen</h2>
+<p>Nach dem geprüften Quellstand enthalten die Kernfunktionen keine automatische Übermittlung der Familiendaten an den Entwickler und keine eingebauten Analyse-, Werbe- oder Trackingdienste. Expo-Updates sind im vorliegenden Android-Manifest deaktiviert. Die App verwendet Systemauswahldialoge für Bilder und Dateien. Je nach Android-Version können dafür Speicher- oder Fotoberechtigungen erforderlich sein. Kamera-, Mikrofon- und Overlay-Berechtigungen werden in der bereitgestellten Konfiguration ausgeschlossen. Das tatsächliche Verhalten des ausgelieferten Release-Builds ist vor Veröffentlichung zu testen.</p>
+</section>
+<section>
+<h2>Sicherung und Gerätetransfer</h2>
+<p>Die Android-Konfiguration deaktiviert automatische App-Backups und enthält Ausschlussregeln für Cloud-Backups und Gerätetransfers der erfassten App-Verzeichnisse. Daraus folgt keine Garantie gegen alle herstellerspezifischen Sicherungen oder eine Sicherung, die du selbst außerhalb der App anlegst. Bewahre bei Bedarf eigene Exporte sicher auf. Der Entwickler kann verlorene lokale Daten nicht wiederherstellen.</p>
+</section>
+<section>
+<h2>Exporte, Importe und Weitergabe</h2>
+<p>Auf deine Aktion erstellt die App Stammbaum-Grafiken als PDF, PNG oder SVG und Familien-Backups als .familybackup-Datei. Backups können auch Profilbilder enthalten und lassen sich wieder importieren. Der optionale Passwortschutz betrifft die Backup-Datei, nicht automatisch die lokale Datenbank oder Grafikexporte. Ohne Passwort wird das Backup unverschlüsselt exportiert. Teile sensible Informationen nur mit geeigneten Empfängern. Wenn du über die System-Teilen-Funktion eine E-Mail-, Messenger-, Cloud- oder Druck-App auswählst, kann diese die Daten nach ihren eigenen Regeln weiterverarbeiten. Auch ein ausgewählter Speicherort kann cloudgestützt sein.</p>
+</section>
+<section>
+<h2>Aufbewahrung und Löschung</h2>
+<p>Gespeicherte Personen und Familien bleiben bis zu deiner Löschung in der App. App-eigene Profilbildkopien werden im vorgesehenen Löschablauf bereinigt; Originale aus der Galerie bleiben unberührt. Temporäre Exportdateien werden in den vorgesehenen Abläufen nach dem Speichern, Teilen oder Abbrechen zur Löschung vorgesehen. Die Altersbereinigung berücksichtigt erkannte Backup- und Grafikexporte im App-Cache, wenn die entsprechenden App-Abläufe ausgeführt werden. Bei Fehlern, einem App-Abbruch oder fehlender erneuter Nutzung können Dateien länger bestehen. Es wird keine feste Löschfrist bei geschlossener App zugesagt. Eine Deinstallation entfernt üblicherweise die app-internen Daten, nicht jedoch bereits exportierte, geteilte oder anderweitig gesicherte Kopien. Eine forensisch sichere Löschung wird nicht versprochen.</p>
+</section>
+<section>
+<h2>App-Store, Kauf und Support</h2>
+<p>Geplant ist ein Einmalkauf ohne In-App-Käufe, zunächst für Android. Kauf, Download, Bezahlung und Store-Updates erfolgen über den jeweiligen App-Store und unter dessen Datenschutzbedingungen. Welche Bestell- oder Abrechnungsinformationen dem Entwickler beim gewählten Vertriebsweg zugänglich werden, muss vor dem Verkaufsstart konkret ergänzt werden. Wenn du dem Entwickler eine E-Mail schreibst, werden deine E-Mail-Adresse, dein Anliegen und freiwillig übermittelte Inhalte zur Bearbeitung verarbeitet. Sende möglichst keine vollständigen Stammbäume oder unnötigen Angaben über Angehörige.</p>
+</section>
+<section>
+<h2>Verantwortlichkeit und Rechte</h2>
+<p>Der Entwickler erhält durch die beschriebene lokale Nutzung keinen Zugriff auf deine Stammbäume. Deine Nutzung für rein persönliche oder familiäre Zwecke ist von einer beruflichen oder öffentlichen Nutzung zu unterscheiden; beim Erfassen und Weitergeben von Daten anderer Menschen musst du deren Rechte beachten. Für vom Anbieter selbst verarbeitete Supportdaten kommen Art. 6 Abs. 1 lit. b DSGVO (vertragliche oder vorvertragliche Anfragen) beziehungsweise lit. f (berechtigtes Interesse an der Bearbeitung sonstiger Anliegen) in Betracht. Diese Daten werden gelöscht, wenn das Anliegen erledigt ist und keine Aufbewahrungspflichten oder berechtigten Gründe entgegenstehen. Soweit anwendbar, hast du Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit und Widerspruch gegen auf lit. f gestützte Verarbeitung sowie auf Beschwerde bei einer Datenschutzaufsichtsbehörde. Eine erteilte Einwilligung kann für die Zukunft widerrufen werden. Für nur lokal gespeicherte Daten nutze die App-Funktionen; der Entwickler kann diese Daten nicht aus der Ferne auslesen oder löschen.</p>
+</section>
+</main>
+<footer>
+<span>© 2026 Fabian Unger</span>
+<div class="links">
+<a href="impressum.html">Impressum</a>
+<a href="datenschutz.html">Datenschutz Website</a>
+<a href="datenschutz-family-tree.html">Datenschutz App</a>
+</div>
+</footer>
+</div>
+</body>
+</html>
