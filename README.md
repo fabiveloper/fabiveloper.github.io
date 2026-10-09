@@ -10,13 +10,13 @@ Kein React, kein TypeScript, kein JavaScript, kein Python-Generator, keine npm-P
 index.html                      Startseite, Projekte, Kontakt
 simulation.html                 Rennbahn-Projekt
 family-tree.html                App-Beschreibung
-impressum.html                   Anbieterangaben, noch unvollständig
-datenschutz.html                Website-Datenschutz, Entwurf
-datenschutz-family-tree.html     App-Datenschutz, Entwurf
+impressum.html                   Anbieterangaben mit Platzhaltern
+datenschutz.html                 Website-Datenschutz
+datenschutz-family-tree.html     App-Datenschutz
 404.html                        Fehlerseite
 assets/style.css                Gesamtes Design
 assets/favicon.svg              Website-Symbol
-robots.txt                      Im Entwurf: Indexierung nicht erwünscht
+robots.txt                      Indexierung nicht erwünscht
 .nojekyll                       Keine Jekyll-Verarbeitung
 .github/workflows/pages.yml     Optionaler, gesperrter Pages-Upload
 ```
@@ -36,7 +36,7 @@ Ziel ist das User-Repository `fabiveloper.github.io` im Konto `fabiveloper`. Die
 3. Vor Veröffentlichung die drei Rechtsseiten vollständig ergänzen und auf die tatsächliche Hosting-/Vertriebssituation abstimmen.
 4. GitHub: Settings → Pages → Source: GitHub Actions.
 5. Erst nach Freigabe: Settings → Secrets and variables → Actions → Variables → Repository variable `PAGES_RELEASE_APPROVED` auf `true` setzen.
-6. Nach sachlicher Vervollständigung die `DRAFT_LEGAL`-Kommentare, offenen Platzhalter und Entwurfswarnungen entfernen. Alle Seiten besitzen derzeit einen Entwurfsbalken und `noindex,nofollow`; für die fertige Website diese Hinweise anpassen. `robots.txt` dann auf `Allow: /` umstellen.
+6. Vor Veröffentlichung die `Platzhalter:`-Angaben in den Rechtsseiten vervollständigen. Die Seiten verwenden derzeit `noindex,nofollow`; für die fertige Website diese Einstellung anpassen. `robots.txt` dann auf `Allow: /` umstellen.
 7. Den Workflow „Publish static HTML (gated)“ manuell starten. Er kopiert nur HTML, Assets, robots.txt und .nojekyll, ohne Compiler oder Generator.
 
 Die variable Freigabe und die Textprüfung sind redaktionelle Schutzmaßnahmen, keine automatische Rechtsprüfung. Es gibt keinen automatischen Deploy bei jedem Push. Ein leerer oder nicht auf `true` gesetzter Schalter lässt den Job aus. Manuelle Veröffentlichung oder die GitHub-Einstellung „Deploy from a branch“ würden diese Sperre umgehen.

@@ -22,7 +22,7 @@ jobs:
       - name: Reject unfinished legal drafts
         shell: bash
         run: |
-          if grep -qE 'DRAFT_LEGAL|OFFEN:|Unvollständiger Entwurf' impressum.html datenschutz.html datenschutz-family-tree.html; then
+          if grep -qE 'DRAFT_LEGAL|OFFEN:|Unvollständiger Entwurf|Platzhalter:' impressum.html datenschutz.html datenschutz-family-tree.html; then
             echo "Rechtsangaben sind noch nicht vollständig. Keine Veröffentlichung."
             exit 1
           fi
